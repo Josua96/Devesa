@@ -1,0 +1,60 @@
+.menuEmergente{
+    position: relative;
+    display: block;
+}
+
+.contenido{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+
+}
+.contenido select{
+    text-decoration: none;
+    display: block;
+    font-size: medium;
+}
+
+.contenido select:hover{background-color: #f1f1f1}
+
+.areaDeTexto{
+    resize: none;
+
+}
+
+.exhibidores{
+    font-family: "Arial Narrow","Times New Roman";
+    font-size: large;
+    color: black;
+
+}
+
+.fuente{
+    font-family: "Arial Narrow","Times New Roman";
+    color: black;
+
+}
+
+.but{
+    background-color: #97ABF5;
+    width: 100px;
+    height: 30px;
+    color: black;
+}
+
+.textInformes{
+    text-decoration: none;
+}
+@media (max-width: 400px) {
+    .textInformes {
+        margin-top:-10%;
+    }
+}
+
+.imagenes{
+    width:100px;
+}

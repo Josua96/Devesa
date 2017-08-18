@@ -1,0 +1,40 @@
+
+<div class="container-fluid" id="desc">
+    <link rel="stylesheet" type="text/css" href="">
+    <h2 class="fuente" style="text-align: center;"> ÁREA {{area}}</h2>
+
+    <ul class="fuente" style="list-style: none;" ng-repeat="nombre in encargados">
+        <li>
+            {{nombre}}
+        </li>
+    </ul>
+
+    <div class="table-responsive" style="opacity: 0.8;height:300px;">
+        <table class="table">
+            <thead style="background-color: #000000 ; color:#ffffff;" >
+            <th>Area</th>
+            <th>Actividad</th>
+            <th>Fecha</th>
+            <th>Objetivo</th>
+            <th>Programa</th>
+            <th>Cantidad de estudiantes</th>
+            </thead>
+
+            <tbody>
+            <tr ng-repeat="informes in actividades" >
+                <center>
+                <td style="padding-left: 10px; width: 200px;">{{textoArea(informes["v_area"])}}</td>
+                <td style="padding-left: 20px; width: 200px;"> {{informes["v_actividad"]}}</td>
+                <td style="padding-left: 20px;width: 200px;">{{revertir(informes["v_fecha"].slice(0,10))}}</td>
+                <td style="padding-left: 20px;width: 200px;"> {{informes["v_objetivo"]}}</td>
+                <td style="padding-left: 20px;width: 200px;"> {{informes["v_programa"]}}</td>
+                <td style="padding-left: 20px;width: 200px;"> {{informes["v_cantestudiantes"]}}</td>
+                </center>
+            </tr>
+
+            </tbody>
+        </table>
+
+        <input type="button" value="hoa" ng-click="obtenerEncargados()">
+    </div>
+</div>
